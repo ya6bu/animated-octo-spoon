@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amith | Web Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --text-primary: #e0e0e0;
+            --text-secondary: #888888;
+            --accent-color: #ffffff;
+            --hover-bg: #1a1a1a;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: 'JetBrains Mono', monospace;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        /* --- Header Section --- */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .profile-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #333; /* Placeholder */
+            border: 1px solid #444;
+        }
+
+        .title-area h1 {
+            font-size: 1.2rem;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 4px;
+        }
+
+        /* --- Content Blocks --- */
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+
+        .current-role {
+            font-size: 1rem;
+        }
+
+        .date-range {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-top: 5px;
+        }
+
+        .about-text {
+            line-height: 1.6;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+        }
+
+        /* --- Project List --- */
+        .project-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 10px;
+            margin: 0 -10px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: inherit;
+            transition: background 0.2s;
+        }
+
+        .project-item:hover {
+            background-color: var(--hover-bg);
+        }
+
+        .project-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .project-icon {
+            font-size: 1.2rem;
+            width: 24px;
+            text-align: center;
+        }
+
+        .arrow-icon {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+        }
+
+        /* --- Footer Socials --- */
+        footer {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            opacity: 0.7;
+        }
+
+        .social-link {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .social-link:hover {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="profile-info">
+                <img src="https://via.placeholder.com/50" alt="Profile" class="avatar">
+                <div class="title-area">
+                    <h1>Hi, I am Amith.</h1>
+                    <div class="subtitle">Web Developer from Kerala</div>
+                </div>
+            </div>
+            <div style="color: var(--text-secondary); font-size: 0.8rem;">22:20 ⚙️</div>
+        </header>
+
+        <section>
+            <h2>Currently</h2>
+            <div class="current-role">
+                Developer - <strong>TCS Innovations Lab</strong>
+                <span class="date-range">2025 - Present</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>About</h2>
+            <p class="about-text">
+                I am a developer who enjoys creating practical solutions to real-world problems. 
+                I am always looking to improve my skills and explore new technologies.
+            </p>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            
+            <a href="#" class="project-item">
+                <div class="project-meta">
+                    <span class="project-icon">🪑</span>
+                    <span>Sit In Shade</span>
+                </div>
+                <span class="arrow-icon">→</span>
+            </a>
+
+            <a href="#" class="project-item">
+                <div class="project-meta">
+                    <span class="project-icon">🎟️</span>
+                    <span>Auto Fare Calculator</span>
+                </div>
+                <span class="arrow-icon">→</span>
+            </a>
+
+            <a href="#" class="project-item">
+                <div class="project-meta">
+                    <span class="project-icon">🌸</span>
+                    <span>Pookkalam.dev</span>
+                </div>
+                <span class="arrow-icon">→</span>
+            </a>
+
+            <a href="#" class="project-item">
+                <div class="project-meta">
+                    <span class="project-icon">🌊</span>
+                    <span>Kerala Dam Levels</span>
+                </div>
+                <span class="arrow-icon">→</span>
+            </a>
+
+            <a href="#" class="project-item">
+                <div class="project-meta">
+                    <span class="project-icon">🚇</span>
+                    <span>Kochi Metro 'Realtime' Map</span>
+                </div>
+                <span class="arrow-icon">→</span>
+            </a>
+        </section>
+
+        <footer>
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">X</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">Telegram</a>
+            <a href="#" class="social-link">Mail</a>
+        </footer>
+    </div>
+
+</body>
+</html>
